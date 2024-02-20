@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rufina:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rufina:wght@400;700&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Oxygen:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rufina:wght@400;700&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  /* overflow: hidden; */
+  overflow-x: hidden;
+}
+.contain {
+  position: relative;
+}
+.header_container {
+  display: flex;
+  align-items: center;
+  height: 119px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Mulish", sans-serif;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  text-align: right;
+  margin-right: -87px;
+}
+nav ul li {
+  cursor: pointer;
+  margin-right: 80px;
+  padding: 0 0 5px 0;
+  color: #c8be87;
+  font-weight: bold;
+  position: relative;
+}
+nav ul li:hover {
+  color: white !important;
+}
+nav ul li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  left: 0;
+  bottom: 0;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+  transform-origin: bottom right;
+}
+nav ul li:hover::after {
+  transform: scale(1);
+  transform-origin: bottom left;
+}
+/* Home Section */
+.home {
+  background-image: url("/asset/image/homeImage.png"),
+    url("/asset/image/homeBackground.jpg");
+  height: 110vh;
+  background-position: left top 134px, right bottom;
+  background-repeat: no-repeat;
+  background-size: auto 90%, cover; /* Adjust the percentage as needed */
+  position: relative;
+  background-attachment: scroll, fixed;
+}
+.home-paragraph {
+  color: #ffffff;
+}
+.home-h1 {
+  font-family: "Rufina", serif !important;
+  font-size: 110px;
+  font-weight: 700;
+  position: relative;
+  color: white;
+  margin-top: 60px;
+}
+.home-h1::after {
+  content: "";
+  position: absolute;
+  width: 62%;
+  height: 2px;
+  background-color: white;
+  bottom: 0;
+  right: 0;
+}
+.home-h1::before {
+  content: "";
+  position: absolute;
+  width: 62%;
+  height: 2px;
+  background-color: white;
+  top: 0;
+  right: 0;
+}
+
+.home-h2 {
+  color: #e9cb60;
+  font-size: 100px;
+  font-family: "Yellowtail", cursive;
+  font-weight: 400;
+  margin-top: -7px;
+  margin-right: 20px;
+}
+.home-content {
+  width: 1200px;
+  text-align: right;
+  margin: 0 auto;
+  position: relative;
+  top: 18%;
+  /* margin-left: 100px; */
+}
+.hom-para {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  word-spacing: 1px;
+  font-weight: 400;
+}
+.hom-para2 {
+  font-size: 50px;
+  font-weight: 500;
+  font-family: "Oxygen", sans-serif;
+}
+.footer-div {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 32px 0 32px 0;
+}
+.navLink {
+  display: flex;
+  flex-direction: column;
+  line-height: 3;
+  font-family: "Roboto Slab", serif !important;
+}
+.navLink a:hover {
+  color: #e9cb60 !important;
+}
+footer {
+  background-color: black;
+  color: white;
+}
+.contact_text {
+  line-height: 1.4;
+}
+.social-media {
+  display: flex;
+}
+.social-media img {
+  margin-left: 4px;
+}
+.social-media-container {
+  background-color: white;
+  padding: 17px;
+  border-radius: 3px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.thakurHair {
+  font-family: "Roboto Slab", serif !important;
+  font-weight: 700 !important;
+}
+.location {
+  font-family: "Roboto Slab", serif !important;
+  font-weight: 300 !important;
+}
+.timing {
+  font-family: "Roboto Slab", serif !important;
+  line-height: 1.8 !important;
+  font-weight: 300;
+}
+
+.connect {
+  font-family: "Roboto Slab", serif !important;
+  font-weight: bold;
+}
+.list-anchor {
+  text-decoration: none;
+  color: #c8be87;
+}
+li:hover .list-anchor {
+  color: white;
+}
+
+/* About Us Section */
+.about {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("/asset/image/aboutbackground.jpg");
+  height: 104vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  background-attachment: fixed;
+  position: relative;
+}
+.main-about {
+  width: 1200px;
+  margin: 0 auto;
+}
+.sub-about {
+  top: 28%;
+  position: absolute;
+}
+.about-h1 {
+  color: #96d1bf;
+  font-size: 106px;
+  text-shadow: 2px 2px 12px black;
+  font-weight: 700 !important;
+}
+.sub-about p {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 34px;
+  text-shadow: 2px 2px 12px black;
+}
+
+/* Services Section */
+.services {
+  background-image: url("/asset/image/homeBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.list {
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.list img {
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.sub-services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+.main-services {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 10%;
+}
+.card {
+  background-color: black;
+  width: 401px;
+  height: 572.5px;
+  overflow: hidden;
+  margin-top: 26px;
+  /* transform: scale(1); Adjust the scale factor as needed */
+  transition: transform 0.3s ease;
+  box-shadow: 2px 2px 12px rgba(199, 198, 198, 0.493);
+  border-radius: 12px;
+}
+.card:hover {
+  transform: translateY(
+    -20px
+  ); /* Adjust the scale factor for the hover state */
+  box-shadow: 2px 2px 12px rgba(138, 182, 17, 0.493);
+}
+.services {
+  position: relative;
+}
+.headd {
+  font-family: "Roboto Slab", serif !important;
+  font-size: 50px;
+  word-spacing: 5px;
+}
+.headd1 {
+  font-size: 26px;
+  margin-top: 30px;
+  word-spacing: 5px;
+}
+.headd2 {
+  font-size: 26px;
+  color: #ffd0a6 !important;
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+/* Contact Us Section */
+.contact {
+  background-image: url("/asset/image/contact\ us.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.main-contact {
+  width: 1200px;
+  margin: 0 auto;
+}
+.sub-contact {
+  position: absolute;
+  top: 40%;
+}
+.sub-contact h1 {
+  font-family: "Roboto Slab", serif !important;
+  color: #d0b1b1;
+  font-weight: 700;
+  font-size: 73px;
+}
+.subContact-para {
+  color: #b3a8a8;
+  font-weight: 400;
+  font-size: 29px;
+}
+.formBg {
+  background-image: url("/asset/image/homeBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sub-fromBg {
+  width: 1200px;
+  margin: 0 auto;
+}
+form {
+  padding: 20px;
+  border-radius: 12px;
+}
+input {
+  background-color: #d9d9d9;
+  padding: 12px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+}
+textarea {
+  background-color: #d9d9d9 !important;
+  border-radius: 6px;
+  resize: none;
+}
+label {
+  margin-bottom: 3px;
+}
+.ref {
+  position: relative;
+}
+.bgref {
+  background-image: url("/asset/image/homeBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.main-ref {
+  width: 1200px;
+  margin: 0 auto;
+}
+.sub-ref {
+  position: absolute;
+}
+details summary {
+  cursor: pointer;
+  outline: none; /* This removes the outline when focused (optional) */
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary {
+  list-style: none;
+  padding: 0; /* Adjust padding as needed */
+  margin: 0; /* Adjust margin as needed */
+}
+
+details .hellonev {
+  display: none;
+}
+
+details[open] .hellonev {
+  display: block;
+}
+
+details p {
+  margin-top: 0; /* Adjust margin as needed */
+}

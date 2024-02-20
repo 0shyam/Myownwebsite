@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/main.css" />
+    <link rel="stylesheet" href="/style/media.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+   />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header_container">
+        <img
+          src="./asset/image/logo.png"
+          alt="logo"
+          style="height: 170px; object-fit: contain; margin-left: -50px"
+        />
+        <nav>
+          <ul>
+            <li><a href="/index.html" class="list-anchor">HOME</a></li>
+            <li>
+              <a href="/about.html" class="list-anchor">ABOUT US</a>
+            </li>
+            <li><a href="/services.html" class="list-anchor">SERVICES</a></li>
+            <li><a href="/contact.html" class="list-anchor">CONTACT US</a></li>
+            <li>
+              <a href="/appointment.html" class="list-anchor"
+                >BOOK APPOINTMENT</a
+              >
+            </li>
+            <li>
+              <a href="/reference.html" class="list-anchor">REFRENCES</a>
+            </li>
+          </ul>
+        </nav>
+        <details>
+          <summary><i class="fa-solid fa-bars"></i></summary>
+          <div class="hellonev">
+            <ul style="margin-top: 123px">
+              <li><a href="/index.html" class="list-anchor">HOME</a></li>
+              <li>
+                <a href="/about.html" class="list-anchor">ABOUT US</a>
+              </li>
+              <li><a href="/services.html" class="list-anchor">SERVICES</a></li>
+              <li>
+                <a href="/contact.html" class="list-anchor">CONTACT US</a>
+              </li>
+              <li>
+                <a href="/appointment.html" class="list-anchor"
+                  >BOOK APPOINTMENT</a
+                >
+              </li>
+              <li>
+                <a href="/reference.html" class="list-anchor">REFRENCES</a>
+              </li>
+            </ul>
+          </div>
+        </details>
+      </header>
+      <div class="services">
+        <div class="main-services">
+          <p style="text-align: left; color: #ffd0a6" class="headd1">
+            TO BOOK APPOINMENT PLEASE FILL THE FORM BELOW:
+          </p>
+          <div class="sub-services">
+            <div>
+              <div class="sub-fromBg" style="padding: 45px 0 45px 0">
+                <div style="display: flex; justify-content: space-between">
+                  <div>
+                    <form
+                      style="
+                        background-color: black;
+                        color: white;
+                        width: 600px;
+                      "
+                      class="apfrom"
+                    >
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          margin-bottom: 20px;
+                        "
+                      >
+                        <label for="name">Your Name:</label>
+                        <input
+                          type="text"
+                          required
+                          placeholder="Enter Your Name"
+                        />
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          margin-bottom: 20px;
+                        "
+                      >
+                        <label for="date">ENTER PREFERRED DATE :</label>
+                        <input type="date" required />
+                      </div>
+
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          margin-top: 20px;
+                          margin-bottom: 20px;
+                        "
+                      >
+                        <label for="time">ENTER PREFERRED TIME: </label>
+                        <input type="time" required />
+                      </div>
+                      <div>
+                        <p style="font-size: 20px">
+                          Please Select Your Service:
+                        </p>
+                        <div
+                          style="
+                            background-color: white;
+                            color: black;
+                            width: 50%;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            height: 47px;
+                            margin-top: 7px;
+                            margin-bottom: 7px;
+                          "
+                        >
+                          <input
+                            type="checkbox"
+                            name="test1"
+                            id="test1"
+                            style="width: 20px; height: 20px"
+                          />
+                          <label
+                            for="test1"
+                            style="font-size: 20px; margin-top: 4px"
+                            >Gentleman Cut --Rs 200</label
+                          >
+                        </div>
+                        <div
+                          style="
+                            background-color: white;
+                            color: black;
+                            width: 50%;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            height: 47px;
+                            margin-top: 7px;
+                            margin-bottom: 7px;
+                          "
+                        >
+                          <input
+                            type="checkbox"
+                            name="test2"
+                            id="test2"
+                            style="width: 20px; height: 20px"
+                          />
+                          <label
+                            for="test2"
+                            style="font-size: 20px; margin-top: 4px"
+                            >Gentleman Cut --Rs 200</label
+                          >
+                        </div>
+                        <div
+                          style="
+                            background-color: white;
+                            color: black;
+                            width: 50%;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            height: 47px;
+                            margin-top: 7px;
+                            margin-bottom: 7px;
+                          "
+                        >
+                          <input
+                            type="checkbox"
+                            name="test3"
+                            id="test3"
+                            style="width: 20px; height: 20px"
+                          />
+                          <label
+                            for="test3"
+                            style="font-size: 20px; margin-top: 4px"
+                            >Gentleman Cut --Rs 200</label
+                          >
+                        </div>
+                        <div
+                          style="
+                            background-color: white;
+                            color: black;
+                            width: 50%;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            height: 47px;
+                            margin-top: 7px;
+                            margin-bottom: 7px;
+                          "
+                        >
+                          <input
+                            type="checkbox"
+                            name="test4"
+                            id="test4"
+                            style="width: 20px; height: 20px"
+                          />
+                          <label
+                            for="test4"
+                            style="font-size: 20px; margin-top: 4px"
+                            >Gentleman Cut --Rs 200</label
+                          >
+                        </div>
+                        <div
+                          style="
+                            background-color: white;
+                            color: black;
+                            width: 50%;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            height: 47px;
+                            margin-top: 7px;
+                            margin-bottom: 7px;
+                          "
+                        >
+                          <input
+                            type="checkbox"
+                            name="test5"
+                            id="test5"
+                            style="width: 20px; height: 20px"
+                          />
+                          <label
+                            for="test5"
+                            style="font-size: 20px; margin-top: 4px"
+                            >Gentleman Cut --Rs 200</label
+                          >
+                        </div>
+                        <div
+                          style="
+                            background-color: white;
+                            color: black;
+                            width: 50%;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            height: 47px;
+                            margin-top: 7px;
+                            margin-bottom: 7px;
+                          "
+                        >
+                          <input
+                            type="checkbox"
+                            name="test6"
+                            id="test6"
+                            style="width: 20px; height: 20px"
+                          />
+                          <label
+                            for="test6"
+                            style="font-size: 20px; margin-top: 4px"
+                            >Gentleman Cut --Rs 200</label
+                          >
+                        </div>
+                        <div
+                          style="
+                            background-color: white;
+                            color: black;
+                            width: 50%;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            height: 47px;
+                            margin-top: 7px;
+                            margin-bottom: 7px;
+                          "
+                        >
+                          <input
+                            type="checkbox"
+                            name="test7"
+                            id="test7"
+                            style="width: 20px; height: 20px"
+                          />
+                          <label
+                            for="test7"
+                            style="font-size: 20px; margin-top: 4px"
+                            >Gentleman Cut --Rs 200</label
+                          >
+                        </div>
+                        <div
+                          style="
+                            background-color: white;
+                            color: black;
+                            width: 50%;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            height: 47px;
+                            margin-top: 7px;
+                            margin-bottom: 7px;
+                          "
+                        >
+                          <input
+                            type="checkbox"
+                            name="test8"
+                            id="test8"
+                            style="width: 20px; height: 20px"
+                          />
+                          <label
+                            for="test8"
+                            style="font-size: 20px; margin-top: 4px"
+                            >Gentleman Cut --Rs 200</label
+                          >
+                        </div>
+                        <div
+                          style="
+                            background-color: white;
+                            color: black;
+                            width: 50%;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            height: 47px;
+                            margin-top: 7px;
+                            margin-bottom: 7px;
+                          "
+                        >
+                          <input
+                            type="checkbox"
+                            name="test9"
+                            id="test9"
+                            style="width: 20px; height: 20px"
+                          />
+                          <label
+                            for="test9"
+                            style="font-size: 20px; margin-top: 4px"
+                            >Gentleman Cut --Rs 200</label
+                          >
+                        </div>
+                        <div
+                          style="
+                            background-color: white;
+                            color: black;
+                            width: 50%;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            height: 47px;
+                            margin-top: 7px;
+                            margin-bottom: 7px;
+                          "
+                        >
+                          <input
+                            type="checkbox"
+                            name="test11"
+                            id="test11"
+                            style="width: 20px; height: 20px"
+                          />
+                          <label
+                            for="test11"
+                            style="font-size: 20px; margin-top: 4px"
+                            >Gentleman Cut --Rs 200</label
+                          >
+                        </div>
+                        <div
+                          style="
+                            background-color: white;
+                            color: black;
+                            width: 50%;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            height: 47px;
+                            margin-top: 7px;
+                            margin-bottom: 7px;
+                          "
+                        >
+                          <input
+                            type="checkbox"
+                            name="test12"
+                            id="test12"
+                            style="width: 20px; height: 20px"
+                          />
+                          <label
+                            for="test12"
+                            style="font-size: 20px; margin-top: 4px"
+                            >Gentleman Cut --Rs 200</label
+                          >
+                        </div>
+                        <div
+                          style="
+                            background-color: white;
+                            color: black;
+                            width: 50%;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            height: 47px;
+                            margin-top: 7px;
+                            margin-bottom: 7px;
+                          "
+                        >
+                          <input
+                            type="checkbox"
+                            name="test13"
+                            id="test13"
+                            style="width: 20px; height: 20px"
+                          />
+                          <label
+                            for="test13"
+                            style="font-size: 20px; margin-top: 4px"
+                            >Gentleman Cut --Rs 200</label
+                          >
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-div">
+          <div class="anchor">
+            <p
+              style="
+                font-weight: 600;
+                font-size: 30px;
+                border-bottom: 1px solid white;
+                margin-bottom: 12px;
+              "
+            >
+              Contact Us
+            </p>
+            <span class="contact_text">
+              <p style="font-weight: 600" class="thakurHair">
+                THAKUR’S HAIR SALOON
+              </p>
+              <p style="font-weight: 200" class="location">
+                SURYA BIKRAM GYAWALI MARG
+              </p>
+              <p style="font-weight: 200" class="location">
+                OLD BANESHWOR, KTM -31
+              </p>
+              <p style="margin: 17px 0 17px 0">Mobile: 9841167058</p>
+            </span>
+            <p>REFRENCES</p>
+            <div class="social-media-container">
+              <p
+                style="
+                  color: black;
+                  text-align: left;
+                  margin-left: -80px;
+                  margin-bottom: 7px;
+                "
+                class="connect"
+              >
+                connect with us
+              </p>
+              <div class="social-media">
+                <a
+                  href="https://www.instagram.com/shyambabuthakur4/"
+                  target="_blank"
+                >
+                  <img
+                    src="/asset/image/facebook.png"
+                    alt="facebook"
+                    style="height: 32px; width: 32px"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/shyambabuthakur4/"
+                  target="_blank"
+                >
+                  <img
+                    src="/asset/image/tiktok.png"
+                    alt="tiktok"
+                    style="height: 32px; width: 32px"
+                  />
+                </a>
+                <a href="https://www.instagram.com/shyambabuthakur4/">
+                  <img
+                    src="/asset/image/insta.png"
+                    alt="instagram"
+                    style="height: 32px; width: 32px"
+                  />
+                </a>
+                <a href="https://www.linkedin.com/in/shyambabuthakur/">
+                  <img
+                    src="/asset/image/linkdine.png"
+                    alt="linkedin"
+                    style="height: 32px; width: 32px"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="/asset/image/thread.png"
+                    alt="thread"
+                    style="height: 32px; width: 32px"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="/asset/image/youtube.png"
+                    alt="youtube"
+                    style="height: 32px; width: 32px"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="navLink">
+            <a href="#" style="color: white; font-weight: 700">HOME</a
+            ><a href="#" style="color: white; font-weight: 700">ABOUT US</a
+            ><a href="#" style="color: white; font-weight: 700">SERVICES</a
+            ><a href="" style="color: white; font-weight: 700">CONTACT US</a
+            ><a href="" style="color: white; font-weight: 700"
+              >BOOK APPOINTMENT</a
+            >
+          </div>
+          <div>
+            <p style="margin-bottom: 10px; font-weight: bold; font-size: 18px">
+              OPENING HOURS
+            </p>
+            <span style="line-height: 1.4" class="timing">
+              <p>SUNDAY: 6:30 AM - 9:00 PM</p>
+              <p>MONDAY: 6:30 AM - 9:00 PM</p>
+              <p>TUESDAY: 6:30 AM - 9:00 PM</p>
+              <p>WEDNESDAY: 6:30 AM - 9:00 PM</p>
+              <p>THURSDAY: 6:30 AM - 9:00 PM</p>
+              <p>FRIDAY: 6:30 AM - 9:00 PM</p>
+              <p>SATURDAY: 6:30 AM - 9:00 PM</p>
+            </span>
+            <hr style="width: 179px" />
+            <div style="display: flex; margin-top: 20px">
+              <span style="color: #c9be87; margin-right: 5px">*NOTE: </span>
+              <p>We remain close on last Tuesday of every month.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
