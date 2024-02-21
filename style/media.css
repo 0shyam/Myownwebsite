@@ -179,7 +179,16 @@
     color: white;
   }
   .refrences-device{
-    font-size: 20px !important;
+    font-size: 12px !important;
+
+    /* display: none; */
+
+  }
+  .mdk{
+    width: 100% !important;
+  }
+  .appopt{
+    width: 100% !important;
   }
 }
 @media (min-width: 992px) {
